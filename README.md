@@ -25,9 +25,9 @@ Shipment pricing system are new generation of traditional shipment pricing where
 - Scope Of Project
 
   
-## Demo
+## Demo Link
 
-  Heroku: 
+  Heroku:https://shipmentpricing.herokuapp.com/ 
 
 ### Overview
 This is Flask based app to predict prices of shipment based on various factors  which would be 
