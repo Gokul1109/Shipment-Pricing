@@ -20,7 +20,6 @@ Shipment pricing system are new generation of traditional shipment pricing where
 - Dataset
 - Installation
 - Deployment
-- Documentation
 - Technology Used
 - Scope Of Project
 
@@ -46,12 +45,6 @@ The Code is written in Python 3.8 If you don't have Python installed you can fin
 ### Deployment
 ### Heroku
 Login or signup in order to create virtual app. You can either connect your github profile or download ctl manually to deploy the project    
-
-### Documentation
-- High Level Document :
-- Low Level Document :
-- Architecture :
-- Wire Frame Document:
 
 ### Technology Used
 - Flask
