@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shipment Price Prediction</title>
+    <link rel="stylesheet" href='/templates/static/home.css'>
+</head>
+<body>
+  <form action='/predict' method='POST'>
+      <h2>Shipment Analysis</h2>
+      <div class="mode">
+         <h4>
+             Whats is the type of Shipment Mode you prefer?</h4><select name="Shipment_Map"id="a"required="required">
+             <option value="Air">Air</option >
+             <option value="Air Charter">Air Charter</option>
+             <option value="Truck">Truck</option>
+             <option value="Ocean">Ocean</option></select>
+      </div>
+      <div class="country">
+          <h4>
+              Which country do you wish to ship the package?</h4><select name="Country_map"id="b"required="required">
+             <option value="South Africa">South Africa</option>
+             <option value="Nigeria">Nigeria</option>
+             <option value="Côte d'Ivoire ">Côte d'Ivoire</option>
+             <option value="Uganda ">Uganda</option>
+             <option value="Vietnam">Vietnam </option>
+             <option value="Zambia ">Zambia </option>
+             <option value="Haiti">Haiti</option>
+             <option value="Mozambique">Mozambique</option>
+             <option value="Zimbabwe ">Zimbabwe </option>
+             <option value="Tanzania ">Tanzania </option>
+             <option value="Rwanda">Rwanda</option>
+             <option value="Congo, DRC">Congo, DRC</option>
+             <option value="Guyana">Guyana</option>
+             <option value="Ethiopia">Ethiopia</option>
+             <option value="South Sudan">South Sudan</option>
+             <option value="Kenya ">Kenya </option>
+             <option value="Burundi ">Burundi </option>
+             <option value="Namibia">Namibia</option>
+             <option value="Cameroon ">Cameroon </option>
+             <option value= "Botswana"> Botswana </option>
+             <option value="Ghana">Ghana</option>
+             <option value="Dominican Republic">Dominican Republic</option>
+             <option value="Sudan">Sudan </option>
+             <option value="Swaziland">Swaziland</option>
+             <option value="Mali">Mali</option>
+             <option value="Pakistan">Pakistan</option>
+             <option value="Guatemala">Guatemala  </option>
+             <option value="Malawi">Malawi </option>
+             <option value="Benin">Benin </option>
+             <option value="Libya">Libya</option>
+             <option value="Lebanon">Lebanon</option>
+             <option value="Angola">Angola</option>
+             <option value="Liberia">Liberia</option>
+             <option value="Lesotho ">Lesotho </option>
+             <option value="Sierra Leone">Sierra Leone</option>
+             <option value="Senegal">Senegal</option>
+             <option value="Togo">Togo</option>
+             <option value="Afghanistan">Afghanistan</option>
+             <option value="Kazakhstan">Kazakhstan</option>
+             <option value="Burkina Faso ">Burkina Faso </option>
+             <option value="Burkina Faso ">Kyrgyzstan</option>
+             <option value="Guinea">Guinea</option>
+          <option value="Belize">Belize</option></select>
+          </h4>
+      </div>
+          <h4>What is Scheduled delivery date</h4><br><input id="c" name="Scheduled_Delivery_date" required="required">
+          <h4>What is Scheduled delivery Month</h4><br><input id="d" name="Scheduled_Delivery_month" required="required">
+          <h4>What is Scheduled delivery year</h4><br><input id="e" name="Scheduled_Delivery_year" required="required">
+          <h4>What is date in which package was delivered to client</h4><br><input id="f" name="Scheduled_Delivery_date" required="required">
+          <h4>What is month in which package was delivered to client</h4><br><input id="g" name="Scheduled_Delivery_month" required="required">
+          <h4>What is year in which package was delivered to client</h4><br><input id="h" name="Scheduled_Delivery_year" required="required">
+          <h4>Cost of Line Item Insurance</h4><br><input id="i" name="Line_Item_Insurance" required="required">
+          <h4>Cost of  Unit_Price</h4><br><input id="j" name="Unit_Price" required="required">
+          <h4>Cost of Pack Price</h4><br><input id="k" name="Pack_Price" required="required">
+          <h4> Line_Item_Value</h4><br><input id="l" name=" Line_Item_Value" required="required">
+          <h4>Weight Of the Package</h4><br><input id="n" name="First_Line_Designation_map" required="required">
+          <h4>First line designation</h4><br><input id="o" name="First_Line_Designation_map" required="required">
+
+
+
+
+         <br><br><button id="sub" type="submit "> Predict </button>
+         <br>
+
+  </form>
+
+       <br><br><h3>{{ prediction_text }}</h3>
+<footer>
+    <p> Developed by NYC Logistics</p>
+</footer>
+
+</body>
+
+<style>
+body{
+    text-align: center;
+    color:black ;
+    background-color:floralwhite;
+}
+h2{
+    color:black;
+    background-color: darkorange;
+}
+footer{
+    color:black;
+    background-color: darkorange;
+}
+
+</style>
+</html>
